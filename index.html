@@ -1,0 +1,16 @@
+<button onclick="startTimer()">Bắt đầu bộ đếm</button>
+<p id="timer"></p>
+<script>
+  var count = 0;
+  var timer = null;s
+  function startTimer() {
+    if (!timer) {
+      timer = setInterval(function() {
+        count++;
+        document.getElementById("timer").innerHTML = "Thời gian đã trôi qua: " + count + " giây";
+ 
+      }, 1000);
+    }
+  
+  }
+</script>
